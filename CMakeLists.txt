@@ -37,7 +37,7 @@ add_subdirectory(thirdparty/rlImGui)
 file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
 
 # Include the resource file
-set(MY_RESOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/orbital-sim.rc")
+set(MY_RESOURCES "${CMAKE_CURRENT_SOURCE_DIR}/resources/orbital-sim.rc")
 
 # Add executable
 add_executable("${CMAKE_PROJECT_NAME}" ${MY_SOURCES} ${MY_RESOURCES})
